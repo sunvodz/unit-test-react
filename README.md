@@ -64,7 +64,7 @@ it("renders correctly", () => {
 
 
 ```
-RUN: yarn start
+RUN: `yarn start`
 
 
 Edit file App.js
@@ -88,6 +88,6 @@ function App() {
 export default App;
 
 ```
-RUN TEST : yarn test
+RUN TEST : `yarn test`
 
 
