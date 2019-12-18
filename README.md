@@ -1,10 +1,14 @@
+# Unit Test React
+
+![Screenshot from 2019-12-18 16-46-44](https://user-images.githubusercontent.com/42707869/71075907-6ececd80-21b7-11ea-8b84-7056148b87e3.png)
+`
 npx create-react-app unit-test-react
 cd unit-test-react/
 yarn add --dev enzyme enzyme-adapter-react-16
 code .
-
+`
 edit file setupTest.js
-
+`
 import '@testing-library/jest-dom/extend-expect';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16'
@@ -39,12 +43,12 @@ class Counter extends Component {
 }
 
 export default Counter
-
+`
 
 
 add file Counter.test.js
 
-
+`
 import React from "react";
 import { shallow } from "enzyme";
 
@@ -58,12 +62,12 @@ it("renders correctly", () => {
 });
 
 
-
+`
 RUN: yarn start
 
 
 Edit file App.js
-
+`
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
@@ -82,8 +86,7 @@ function App() {
 
 export default App;
 
-
+`
 RUN TEST : yarn test
 
 
- 
